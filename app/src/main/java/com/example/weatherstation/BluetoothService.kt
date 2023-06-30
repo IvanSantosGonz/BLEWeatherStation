@@ -50,6 +50,7 @@ class BluetoothService(context: Context) {
         return AdvertiseData.Builder()
             .setIncludeDeviceName(true)
             .addServiceUuid(ParcelUuid.fromString(WEATHER_SERVICE_UUID))
+            //.addServiceData(ParcelUuid.fromString(WEATHER_SERVICE_UUID), "some data".toByteArray())
             .build()
     }
 
